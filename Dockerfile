@@ -1,6 +1,6 @@
 FROM mariadb:latest
 
-ADD train.sql/ ./dump/train.sql
+ADD ./dump/train.sql
 
 ENV MYSQL_ROOT_PASSWORD archana
 ENV MYSQL_DATABASE archana
