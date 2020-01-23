@@ -1,6 +1,7 @@
 FROM mariadb:latest
 
-ADD train.sql / ./dump/train.sql
+COPY ./dump/train.sql /docker-entrypoint-initdb.d/
+
 
 ENV MYSQL_ROOT_PASSWORD archana
 ENV MYSQL_DATABASE archana
